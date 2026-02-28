@@ -2,85 +2,119 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name — Research + SWE</title>
-  <meta name="description" content="Personal website for research and software engineering roles." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yanda Bao</title>
+  <meta name="description" content="Yanda Bao — AI research and software engineering." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="container nav">
-      <a class="brand" href="#">Your Name</a>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#publications">Publications</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <main class="wrap">
+    <header class="top">
+      <h1>Yanda Bao</h1>
+      <p class="subtitle">AI Research + Software Engineering</p>
+      <p class="links">
+        <a href="mailto:yandabao@uw.edu">yandabao@uw.edu</a>
+        <span>·</span>
+        <a href="https://www.linkedin.com/in/yanda-bao/">LinkedIn</a>
+        <span>·</span>
+        <a href="https://github.com/yandaboa">GitHub</a>
+      </p>
+      <p>
+        I’m a CS + Math student at the University of Washington (GPA 3.93), focused on robotics, world models,
+        and high-impact software systems.
+      </p>
+    </header>
 
-  <main class="container">
-    <section class="hero" id="about">
-      <p class="pill">Open to Research + SWE Roles</p>
-      <h1>Hi, I’m <span class="accent">Your Name</span>.</h1>
-      <p class="lead">I build machine learning and robotics systems with an emphasis on reliable deployment, strong engineering, and measurable outcomes.</p>
-      <div class="cta-row">
-        <a class="btn primary" href="#publications">View Publications</a>
-        <a class="btn" href="#experience">Work Experience</a>
+    <section>
+      <h2>Publications</h2>
+      <div class="item">
+        <p><strong>Semantic World Models</strong> (ICML 2026 submission)</p>
+        <p class="meta">with Prof. Abhishek Gupta · 3B world model for predicting minimal semantic information to enable planning</p>
+        <p><a href="https://arxiv.org/abs/2510.19818">paper</a></p>
       </div>
-      <ul class="quick">
-        <li>📍 West Coast, US</li>
-        <li>🎓 College undergrad</li>
-        <li>🔬 AI Research + SWE</li>
-      </ul>
-    </section>
 
-    <section id="publications">
-      <div class="section-head">
-        <h2>Selected Publications</h2>
-        <p>Research-first section for labs and grad applications.</p>
+      <div class="item">
+        <p><strong>Model-based Imitation Learning</strong> (ICLR 2026)</p>
+        <p><a href="https://arxiv.org/abs/2507.21533">paper</a></p>
       </div>
-      <div class="cards" id="pub-list"></div>
-    </section>
 
-    <section id="experience">
-      <div class="section-head">
-        <h2>Work Experience</h2>
-        <p>Impact, ownership, and engineering depth.</p>
+      <div class="item">
+        <p><strong>Open-source Reinforcement Learning Infrastructure</strong> (CoRL 2025)</p>
+        <p><a href="https://arxiv.org/abs/2502.07380">paper</a></p>
       </div>
-      <div class="timeline" id="exp-list"></div>
     </section>
 
-    <section id="projects">
-      <div class="section-head">
-        <h2>Projects</h2>
-        <p>Shipped systems and open-source work.</p>
+    <section>
+      <h2>Experience</h2>
+
+      <div class="item">
+        <p><strong>Researcher</strong>, UW WEIRD Lab <span class="meta">· Jun 2025 – Present · Seattle, WA</span></p>
+        <ul>
+          <li>Leading a project to pretrain <strong>10–200M parameter transformers</strong> for in-context learning on robotic manipulation tasks.</li>
+          <li>Driving experiments across data, architectures, and problem framing for test-time improvement.</li>
+          <li>Contributed to <em>Semantic World Models</em>, a 3B world model submitted to ICML 2026.</li>
+        </ul>
       </div>
-      <div class="cards" id="proj-list"></div>
+
+      <div class="item">
+        <p><strong>SWE Intern</strong>, Roblox <span class="meta">· Jun 2025 – Sep 2025 · San Mateo, CA</span></p>
+        <ul>
+          <li>Developed and shipped native in-app rating prompts to <strong>100M+ users</strong> across iOS and Android.</li>
+          <li>Implemented full-stack logic across Lua frontend, C++ game engine, and native layers (Swift / Objective-C++ / Kotlin).</li>
+          <li>Partnered with PM and DS on A/B tests for <strong>100k+ users</strong>, measuring impact on total time spent.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <p><strong>Research Assistant</strong>, UW Robot Learning Lab <span class="meta">· Sep 2024 – Jun 2025 · Seattle, WA</span></p>
+        <ul>
+          <li>2nd/4th author on papers at top robotics/ML venues (ICLR, CoRL).</li>
+          <li>Built training pipelines for value function learning in model-based adversarial imitation frameworks.</li>
+          <li>Re-implemented GAIL/AIRL in PyTorch and trained online world models for IsaacSim tasks.</li>
+          <li>Designed RL environments in IsaacSim/Lab for locomotion and navigation.</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <p>Reach out for research collaboration, internships, or full-time opportunities.</p>
-      <ul>
-        <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
-        <li>GitHub: <a href="https://github.com/yourhandle">github.com/yourhandle</a></li>
-        <li>Google Scholar: <a href="#">Add your Scholar link</a></li>
-        <li>LinkedIn: <a href="#">Add your LinkedIn</a></li>
-      </ul>
+    <section>
+      <h2>Projects</h2>
+
+      <div class="item">
+        <p><strong>VLM/VLA Speculative Decoding</strong> <span class="meta">· PyTorch, Python, Hugging Face</span></p>
+        <ul>
+          <li>Implemented speculative decoding for VLMs/VLAs and reduced inference wall-time by <strong>33%</strong> on MS-COCO VQA.</li>
+          <li>Drafted manuscript and presented results in a poster session.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <p><strong>Flywheel</strong> <span class="meta">· PyTorch, Hugging Face, Ollama, unsloth, Statsig, FastAPI, React</span></p>
+        <ul>
+          <li>Built a model-improvement loop using UX A/B preference collection and finetuning.</li>
+          <li>Implemented LoRA + DPO pipelines for <strong>30B</strong> models and experimented with low-data learning strategies.</li>
+          <li>Built a dashboard for dataset management and finetuning control.</li>
+        </ul>
+      </div>
     </section>
+
+    <section>
+      <h2>Awards</h2>
+      <p>USACO Platinum · 1st Place Congressional App Challenge (WA-08) · 3× AIME qualifier</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <p><strong>Languages:</strong> C/C++, Python, Java, JavaScript/TypeScript</p>
+      <p><strong>Frameworks:</strong> React, React Native, Flutter, Convex, Firebase</p>
+      <p><strong>ML/Math:</strong> PyTorch, NumPy, pandas, Matplotlib, OpenCV</p>
+    </section>
+
+    <footer>
+      Last updated Feb 2026.
+    </footer>
   </main>
-
-  <footer class="container footer">
-    <p>© <span id="year"></span> Your Name. Built for research + SWE recruiting.</p>
-  </footer>
-
-  <script src="site-data.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>
