@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Research + SWE</title>
+  <meta name="description" content="Personal website for research and software engineering roles." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#">Your Name</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="about">
+      <p class="pill">Open to Research + SWE Roles</p>
+      <h1>Hi, I’m <span class="accent">Your Name</span>.</h1>
+      <p class="lead">I build machine learning and robotics systems with an emphasis on reliable deployment, strong engineering, and measurable outcomes.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#publications">View Publications</a>
+        <a class="btn" href="#experience">Work Experience</a>
+      </div>
+      <ul class="quick">
+        <li>📍 West Coast, US</li>
+        <li>🎓 College undergrad</li>
+        <li>🔬 AI Research + SWE</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <div class="section-head">
+        <h2>Selected Publications</h2>
+        <p>Research-first section for labs and grad applications.</p>
+      </div>
+      <div class="cards" id="pub-list"></div>
+    </section>
+
+    <section id="experience">
+      <div class="section-head">
+        <h2>Work Experience</h2>
+        <p>Impact, ownership, and engineering depth.</p>
+      </div>
+      <div class="timeline" id="exp-list"></div>
+    </section>
+
+    <section id="projects">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>Shipped systems and open-source work.</p>
+      </div>
+      <div class="cards" id="proj-list"></div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Reach out for research collaboration, internships, or full-time opportunities.</p>
+      <ul>
+        <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+        <li>GitHub: <a href="https://github.com/yourhandle">github.com/yourhandle</a></li>
+        <li>Google Scholar: <a href="#">Add your Scholar link</a></li>
+        <li>LinkedIn: <a href="#">Add your LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Your Name. Built for research + SWE recruiting.</p>
+  </footer>
+
+  <script src="site-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
